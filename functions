@@ -1,0 +1,12 @@
+
+def nstr1(fun):
+    def inner(sbr):
+       return  fun(sbr)+'successing'
+    return inner
+@nstr1
+def str1(str):
+    return str.upper()
+print(str1("I AM GOOD in "))
+
+
+
